@@ -35,11 +35,12 @@ body {
   font-size: 16px !important;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+  /* Do NOT set overflow-x on body — any non-visible overflow-x forces overflow-y to auto and kills sticky */
+  max-width: 100%;
 }
 
 .main-page-area {
   background: var(--bz-bg);
-  overflow-x: hidden;
 }
 
 .main-page-area a {
@@ -250,20 +251,21 @@ body {
   border-color: var(--bz-border-2);
 }
 
-/* Mobile / side menu drawer */
+/* Mobile / side menu drawer — avoid opacity on overlay (it fades the panel too) */
 .bz-menu-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(26, 29, 35, 0.45);
+  background: rgba(26, 29, 35, 0);
   z-index: 10000;
-  opacity: 0;
   visibility: hidden;
-  transition: opacity 0.25s, visibility 0.25s;
+  pointer-events: none;
+  transition: background 0.25s, visibility 0.25s;
 }
 
 .bz-menu-overlay.open {
-  opacity: 1;
+  background: rgba(26, 29, 35, 0.45);
   visibility: visible;
+  pointer-events: auto;
 }
 
 .bz-menu-panel {
@@ -272,13 +274,14 @@ body {
   right: 0;
   width: min(360px, 92vw);
   height: 100%;
-  background: var(--bz-white);
+  background: #fff;
   z-index: 10001;
   transform: translateX(100%);
   transition: transform 0.3s ease;
   padding: 24px 20px;
   box-shadow: -8px 0 40px rgba(0, 0, 0, 0.12);
   overflow-y: auto;
+  opacity: 1;
 }
 
 .bz-menu-overlay.open .bz-menu-panel {
@@ -662,6 +665,16 @@ body {
   justify-content: center;
   color: var(--bz-ink);
   font-size: 22px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.bz-service-card .ico img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  display: block;
 }
 
 .bz-service-card strong {

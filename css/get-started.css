@@ -3,12 +3,14 @@
 .gs-section {
   background: #e1e9ff;
   position: relative;
+  overflow: visible;
 }
 
 .gs-track {
   height: 155vh;
   position: relative;
   max-width: 100%;
+  overflow: visible;
 }
 
 .gs-pin {
@@ -22,6 +24,17 @@
   padding: 100px 24px 64px;
   box-sizing: border-box;
   overflow: hidden;
+}
+
+@media (min-width: 901px) {
+  .gs-pin {
+    position: sticky !important;
+    top: 0 !important;
+  }
+
+  .gs-track {
+    height: 155vh !important;
+  }
 }
 
 .gs-heading {
@@ -233,7 +246,8 @@
     position: relative;
     top: auto;
     min-height: 0;
-    padding: 64px 20px 48px;
+    padding: 56px 16px 40px;
+    overflow: visible;
   }
 
   .gs-left,
@@ -249,7 +263,13 @@
     white-space: normal;
     flex-wrap: wrap;
     text-align: center;
-    font-size: clamp(36px, 11vw, 52px);
+    justify-content: center;
+    font-size: clamp(30px, 10vw, 48px);
+    gap: 6px 10px;
+  }
+
+  .gs-copy {
+    padding: 0 4px;
   }
 
   .gs-copy p,
@@ -257,9 +277,16 @@
     color: #1a1d23 !important;
   }
 
+  .gs-picker-wrap {
+    width: 100%;
+    max-width: 100%;
+  }
+
   .gs-picker {
-    padding: 20px 16px 12px;
-    border-radius: 22px;
+    padding: 16px 12px 10px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 100%;
   }
 }
 

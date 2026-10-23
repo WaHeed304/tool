@@ -1,157 +1,261 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en-US">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Toolstap | SEO Tools Group Buy</title>
-  <meta name="description" content="Toolstap makes premium SEO, content, and spy tools affordable through secure group buy memberships for freelancers, agencies, and small businesses.">
-  <meta name="theme-color" content="#FF5C00">
-  <link rel="stylesheet" href="css/tokens.css">
-  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="Toolstap makes premium SEO, content, design, and spy tools affordable through secure group buy memberships.">
+  <meta name="theme-color" content="#FF4F00">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/buzzoid.css">
+  <link rel="stylesheet" href="css/static-chrome.css">
+  <link rel="stylesheet" href="css/site-footer.css">
+  <link rel="stylesheet" href="css/inner-pages.css">
+  <link rel="stylesheet" href="css/mobile.css">
   <link rel="icon" href="assets/img/logo.png" type="image/png">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-
-  <header class="site-header" data-header>
-    <div class="header-shell">
-      <div class="header-bar" aria-hidden="true"></div>
-      <div class="header-row">
-        <a href="index.html" class="logo-link" aria-label="Toolstap">
-          <svg class="logo-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+  <header class="bz-header" data-header>
+    <div class="bz-header-bar">
+      <a href="index.html" class="bz-logo" aria-label="Toolstap">
+        <svg class="bz-logo-mark" width="34" height="34" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <path d="M16 3L28 10V22L16 29L4 22V10L16 3Z" fill="#FF4F00"/>
+          <path d="M16 3L28 10L16 17L4 10L16 3Z" fill="#FF7A3D"/>
+          <path d="M16 17V29L28 22V10L16 17Z" fill="#E03E00"/>
+          <path d="M16 17V29L4 22V10L16 17Z" fill="#C43500"/>
+        </svg>
+        <span class="bz-logo-text">toolstap</span>
+      </a>
+      <nav class="bz-nav-desk" aria-label="Menu">
+        <div class="bz-nav-drop">
+          <button type="button" class="bz-nav-link" data-services-trigger aria-expanded="false" aria-controls="services-menu">
+            Tools <i class="bi bi-chevron-down"></i>
+          </button>
+          <div id="services-menu" class="bz-nav-menu" hidden>
+            <a href="tools.html#seo">SEO Tools</a>
+            <a href="tools.html#content">Content &amp; AI Writing</a>
+            <a href="tools.html#design">Design Tools</a>
+            <a href="tools.html#amazon">Amazon Tools</a>
+            <a href="tools.html">All Tools</a>
+          </div>
+        </div>
+        <a class="bz-nav-link" href="pricing.html">Pricing</a>
+        <a class="bz-nav-link" href="faq.html">Help</a>
+      </nav>
+      <div class="bz-header-actions">
+        <a class="bz-login-link" href="https://members.seotoolsgroupbuy.us/">Log in</a>
+        <button type="button" class="bz-icon-btn bz-menu-toggle" data-burger aria-expanded="false" aria-controls="phone-nav" aria-label="Open menu">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+  <div class="bz-menu-overlay" data-menu-overlay aria-hidden="true">
+    <div id="phone-nav" class="bz-menu-panel" role="dialog" aria-label="Mobile menu">
+      <div class="bz-menu-head">
+        <a href="index.html" class="bz-logo" aria-label="Toolstap">
+          <svg class="bz-logo-mark" width="34" height="34" viewBox="0 0 32 32" fill="none" aria-hidden="true">
             <path d="M16 3L28 10V22L16 29L4 22V10L16 3Z" fill="#FF4F00"/>
             <path d="M16 3L28 10L16 17L4 10L16 3Z" fill="#FF7A3D"/>
             <path d="M16 17V29L28 22V10L16 17Z" fill="#E03E00"/>
             <path d="M16 17V29L4 22V10L16 17Z" fill="#C43500"/>
           </svg>
-          <span class="logo-word">Tool<span>stap</span></span>
+          <span class="bz-logo-text">toolstap</span>
         </a>
-
-        <nav class="nav-desktop" aria-label="Menu">
-          <ul class="nav-list" role="list">
-            <li class="nav-item">
-              <button type="button" class="nav-btn" data-services-trigger aria-expanded="false" aria-controls="services-menu">
-                Tools
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
-              </button>
-              <div id="services-menu" class="services-menu">
-                <ul class="services-panel" role="list">
-                  <li><a href="tools.html#seo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg><span class="svc-copy"><span>SEO Tools</span><span class="svc-desc">Ahrefs, SEMrush, Moz &amp; more</span></span></a></li>
-                  <li><a href="tools.html#content"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h10M4 18h14"/></svg><span class="svc-copy"><span>Content Tools</span><span class="svc-desc">Grammarly, Canva, WordAI</span></span></a></li>
-                  <li><a href="tools.html#spy"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg><span class="svc-copy"><span>Spy Tools</span><span class="svc-desc">SpyFu, SimilarWeb, Ubersuggest</span></span></a></li>
-                </ul>
-              </div>
-            </li>
-            <li><a class="nav-link" href="pricing.html">Pricing</a></li>
-            <li><a class="nav-link" href="faq.html">Help</a></li>
-            <li><a class="nav-link" href="about.html" aria-current="page">About</a></li>
-          </ul>
-          <div class="header-actions">
-            <a class="nav-link" href="https://members.seotoolsgroupbuy.us/signup">Log in</a>
-            <a class="btn-cta" href="https://members.seotoolsgroupbuy.us/signup">Get Started</a>
-          </div>
-        </nav>
-
-        <div class="phone-keys">
-          <a class="btn-cta" href="https://members.seotoolsgroupbuy.us/signup" style="padding:0.5rem 0.85rem;font-size:0.75rem">Join</a>
-          <button type="button" class="icon-btn" data-burger aria-expanded="false" aria-controls="phone-nav" aria-label="Open menu">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
-              <path data-burger-line="top" d="M4 7h16"/>
-              <path data-burger-line="middle" d="M4 12h16"/>
-              <path data-burger-line="bottom" d="M4 17h16"/>
-            </svg>
-          </button>
-        </div>
+        <button type="button" class="bz-icon-btn" data-menu-close aria-label="Close menu"><i class="bi bi-x-lg"></i></button>
       </div>
-
-      <div id="phone-nav" class="phone-menu" hidden>
-        <nav aria-label="Mobile menu">
-          <a href="tools.html">All Tools</a>
-          <a href="pricing.html">Pricing</a>
-          <a href="faq.html">Help</a>
-          <a href="about.html">About</a>
-          <a href="contact.html">Contact</a>
-          <a class="btn-cta phone-cta" href="https://members.seotoolsgroupbuy.us/signup">Get Started</a>
-        </nav>
-      </div>
+      <ul class="bz-menu-nav">
+        <li><a href="tools.html">Tools</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="faq.html">Help</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="https://members.seotoolsgroupbuy.us/">Log in</a></li>
+      </ul>
     </div>
-    <div class="header-scrim" data-scrim aria-hidden="true"></div>
-  </header>
+  </div>
+  <div class="bz-header-spacer" aria-hidden="true"></div>
 
   <main id="main">
-    <section class="page-hero">
-      <div class="wrapper">
-        <p class="headline">Our story</p>
-        <h1>About Toolstap</h1>
-        <p>We make premium SEO software affordable so freelancers, agencies, and small teams can compete without enterprise budgets.</p>
+    <section class="ip-hero">
+      <div class="ip-hero-inner">
+        <p class="ip-eyebrow">About Toolstap</p>
+        <h1>Affordable access to 90+ premium tools</h1>
+        <p>Toolstap is your group buy home for SEO, content, design, Amazon, and spy tools — secure platform access at a fraction of retail.</p>
       </div>
     </section>
 
-    <section class="page-content">
-      <div class="wrapper prose">
-        <h2>Why we built Toolstap</h2>
-        <p>Retail seats for Ahrefs, SEMrush, Moz, and similar platforms add up fast. Toolstap exists so marketers can share access costs and still get industry-leading data for keyword research, backlinks, competitor analysis, and content production.</p>
-
-        <h2>What we stand for</h2>
-        <p>Honest pricing, clear tool lists per plan, secure shared access, and support that answers when something breaks. We focus on uptime and account health across the catalog so your research day stays productive.</p>
-
-        <h2>Who we serve</h2>
-        <p>Freelancers, bloggers, ecommerce sellers, and boutique agencies who need Ahrefs-level insight, Canva Pro creatives, Grammarly polish, and spy tools — without paying full retail for every seat.</p>
-
-        <h2>Ready to join?</h2>
-        <p>Pick a plan on our pricing page, complete signup, and unlock access — usually within seconds. Questions? Visit FAQ or contact us.</p>
-
-        <p style="margin-top:2rem">
-          <a class="btn-cta" href="https://members.seotoolsgroupbuy.us/signup" style="width:auto;display:inline-block">Get Started</a>
-        </p>
+    <section class="ip-section white">
+      <div class="ip-wrap narrow">
+        <div class="ip-prose">
+          <h2>Why marketers choose Toolstap</h2>
+          <p>Buying every SEO and AI tool at full price gets expensive fast. Our group buy plans pool access so freelancers, agencies, and businesses get premium software without full retail bills.</p>
+          <p>Plans start at $10/month with Lite, scale through Small and Ahref$ Combo, and unlock the widest catalog on Mega — plus focused Writer and Designer packs.</p>
+          <ul>
+            <li><i class="bi bi-check2-circle"></i> Huge collection of SEO, content, design &amp; spy tools</li>
+            <li><i class="bi bi-check2-circle"></i> Instant access after payment confirmation</li>
+            <li><i class="bi bi-check2-circle"></i> Secure members platform — no shady downloads</li>
+            <li><i class="bi bi-check2-circle"></i> Premium support via chat and ticket</li>
+            <li><i class="bi bi-check2-circle"></i> Flexible monthly plans you can cancel anytime</li>
+          </ul>
+        </div>
+      </div>
+      <div class="ip-wrap" style="margin-top:40px">
+        <div class="ip-feature-grid">
+          <article class="ip-feature">
+            <div class="ico"><i class="bi bi-currency-dollar"></i></div>
+            <h3>Affordable price</h3>
+            <p>Share costs across members and keep premium tools in your stack without full retail pricing.</p>
+          </article>
+          <article class="ip-feature">
+            <div class="ico"><i class="bi bi-shield-check"></i></div>
+            <h3>Safe &amp; secure</h3>
+            <p>Access tools through our secure platform designed for shared and private account use.</p>
+          </article>
+          <article class="ip-feature">
+            <div class="ico"><i class="bi bi-lightning-charge"></i></div>
+            <h3>Instant access</h3>
+            <p>Start using your plan tools right after order confirmation — no long waiting periods.</p>
+          </article>
+          <article class="ip-feature">
+            <div class="ico"><i class="bi bi-people"></i></div>
+            <h3>Reliable service</h3>
+            <p>We work to keep shared seats running smoothly so your research and content workflow stay online.</p>
+          </article>
+          <article class="ip-feature">
+            <div class="ico"><i class="bi bi-key"></i></div>
+            <h3>Exclusive access</h3>
+            <p>One membership dashboard for SEO, AI writing, design, Amazon, and spy tools.</p>
+          </article>
+          <article class="ip-feature">
+            <div class="ico"><i class="bi bi-headset"></i></div>
+            <h3>Premium support</h3>
+            <p>Quick help for shared-tool questions via WhatsApp, live chat, and tickets.</p>
+          </article>
+        </div>
+        <div class="ip-cta-band">
+          <h2>Start from $10/month</h2>
+          <p>Pick Lite, Small, Ahref$ Combo, Mega, Writer, or Designer.</p>
+          <a class="ip-btn" href="pricing.html">View pricing plans</a>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="wrapper">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <a href="index.html" class="logo-link" aria-label="Toolstap">
-            <svg class="logo-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+  <footer class="site-foot">
+    <div class="site-foot-inner">
+      <div class="site-foot-top">
+        <div class="site-foot-brand">
+          <a href="index.html" class="bz-logo" aria-label="Toolstap">
+            <svg class="bz-logo-mark" width="28" height="28" viewBox="0 0 32 32" fill="none" aria-hidden="true">
               <path d="M16 3L28 10V22L16 29L4 22V10L16 3Z" fill="#FF4F00"/>
               <path d="M16 3L28 10L16 17L4 10L16 3Z" fill="#FF7A3D"/>
               <path d="M16 17V29L28 22V10L16 17Z" fill="#E03E00"/>
               <path d="M16 17V29L4 22V10L16 17Z" fill="#C43500"/>
             </svg>
-            <span class="logo-word">Tool<span>stap</span></span>
+            toolstap
           </a>
-          <p>Premium SEO, content, and spy tools — all in one affordable membership.</p>
+          <p class="site-foot-tag">SEO, content, and spy tools. All in one place.</p>
+          <div class="site-foot-social">
+            <a href="#" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+          <p class="site-foot-help-label">Need a hand?</p>
+          <div class="site-foot-help">
+            <a href="contact.html">Contact Us</a>
+            <a href="faq.html">FAQ</a>
+          </div>
         </div>
-        <div class="footer-col">
-          <h3>Tools</h3>
-          <a href="tools.html#seo">SEO Tools</a>
-          <a href="tools.html#content">Content Tools</a>
-          <a href="tools.html#spy">Spy Tools</a>
-          <a href="pricing.html">Pricing</a>
+        <div class="site-foot-col">
+          <h3><i class="bi bi-graph-up-arrow"></i> SEO Tools</h3>
+          <ul>
+            <li><a href="tools.html#seo">Ahrefs Access</a></li>
+            <li><a href="tools.html#seo">SEMrush Access</a></li>
+            <li><a href="tools.html#seo">Moz Pro Access</a></li>
+            <li><a href="tools.html#seo">Majestic Access</a></li>
+          </ul>
         </div>
-        <div class="footer-col">
-          <h3>Company</h3>
-          <a href="about.html">About Us</a>
-          <a href="faq.html">FAQ</a>
-          <a href="contact.html">Contact</a>
+        <div class="site-foot-col">
+          <h3><i class="bi bi-pencil-square"></i> Content</h3>
+          <ul>
+            <li><a href="tools.html#content">Grammarly</a></li>
+            <li><a href="tools.html#content">WordAI</a></li>
+            <li><a href="tools.html#design">Canva Pro</a></li>
+            <li><a href="tools.html#content">ChatGPT</a></li>
+          </ul>
         </div>
-        <div class="footer-col">
-          <h3>Account</h3>
-          <a href="https://members.seotoolsgroupbuy.us/signup">Sign Up</a>
-          <a href="https://members.seotoolsgroupbuy.us/signup">Log In</a>
+        <div class="site-foot-col">
+          <h3><i class="bi bi-eye"></i> Spy Tools</h3>
+          <ul>
+            <li><a href="tools.html#spy">SpyFu</a></li>
+            <li><a href="tools.html#spy">SimilarWeb</a></li>
+            <li><a href="tools.html#spy">Ubersuggest</a></li>
+            <li><a href="tools.html#amazon">Helium 10</a></li>
+          </ul>
+        </div>
+        <div class="site-foot-col">
+          <h3><i class="bi bi-tag"></i> Plans</h3>
+          <ul>
+            <li><a href="pricing.html">Lite Plan</a></li>
+            <li><a href="pricing.html">Small Plan</a></li>
+            <li><a href="pricing.html">Ahref$ Combo</a></li>
+            <li><a href="pricing.html">Mega Plan</a></li>
+          </ul>
         </div>
       </div>
-      <div class="footer-bottom">
-        <div class="footer-legal">
+      <div class="site-foot-mid">
+        <div class="site-foot-col">
+          <h3>Resources</h3>
+          <ul>
+            <li><a href="tools.html">All Tools</a></li>
+            <li><a href="pricing.html">Compare Plans</a></li>
+            <li><a href="faq.html">Group Buy FAQ</a></li>
+            <li><a href="about.html">How Toolstap Works</a></li>
+          </ul>
+        </div>
+        <div class="site-foot-col">
+          <h3>Toolstap</h3>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="site-foot-col">
+          <h3>My Account</h3>
+          <ul>
+            <li><a href="https://members.seotoolsgroupbuy.us/signup">Log In</a></li>
+            <li><a href="https://members.seotoolsgroupbuy.us/signup">Sign Up</a></li>
+            <li><a href="https://members.seotoolsgroupbuy.us/signup">Member Portal</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="site-foot-bottom">
+        <div class="site-foot-legal">
           <a href="#">Terms of Service</a>
           <a href="#">Privacy Policy</a>
+          <p>Copyright © 2026 Toolstap. All Rights Reserved.</p>
         </div>
-        <span>© 2026 Toolstap. All rights reserved.</span>
+        <div>
+          <p class="site-foot-pay-label">Accepted Payment Methods</p>
+          <ul class="site-foot-pay" role="list">
+            <li><img src="images/payments/paypal.svg" alt="PayPal" width="44" height="30" loading="lazy" /></li>
+            <li><img src="images/payments/visa.svg" alt="Visa" width="44" height="30" loading="lazy" /></li>
+            <li><img src="images/payments/mastercard.svg" alt="Mastercard" width="44" height="30" loading="lazy" /></li>
+            <li><img src="images/payments/amex.svg" alt="American Express" width="44" height="30" loading="lazy" /></li>
+            <li><img src="images/payments/apple-pay.svg" alt="Apple Pay" width="44" height="30" loading="lazy" /></li>
+            <li><img src="images/payments/google-pay.svg" alt="Google Pay" width="44" height="30" loading="lazy" /></li>
+          </ul>
+        </div>
       </div>
     </div>
   </footer>
-
   <script src="js/script.js"></script>
 </body>
 </html>

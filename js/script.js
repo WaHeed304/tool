@@ -1,34 +1,58 @@
 (() => {
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-  /* —— Mobile menu drawer —— */
+  /* —— Mobile menu drawer (Buzzoid overlay + legacy phone-menu) —— */
   const overlay = document.querySelector("[data-menu-overlay]");
   const burger = document.querySelector("[data-burger]");
   const closeBtn = document.querySelector("[data-menu-close]");
+  const phoneMenu = document.getElementById("phone-nav");
+  const scrim = document.querySelector("[data-scrim]");
+  const useOverlay = Boolean(overlay);
 
   const openMenu = () => {
-    if (!overlay || !burger) return;
-    overlay.classList.add("open");
-    overlay.setAttribute("aria-hidden", "false");
+    if (!burger) return;
     burger.setAttribute("aria-expanded", "true");
     document.body.style.overflow = "hidden";
+    if (useOverlay) {
+      overlay.classList.add("open");
+      overlay.setAttribute("aria-hidden", "false");
+      return;
+    }
+    if (phoneMenu) {
+      phoneMenu.hidden = false;
+      phoneMenu.classList.add("open");
+    }
+    if (scrim) scrim.classList.add("open");
   };
 
   const closeMenu = () => {
-    if (!overlay || !burger) return;
-    overlay.classList.remove("open");
-    overlay.setAttribute("aria-hidden", "true");
+    if (!burger) return;
     burger.setAttribute("aria-expanded", "false");
     document.body.style.overflow = "";
+    if (useOverlay) {
+      overlay.classList.remove("open");
+      overlay.setAttribute("aria-hidden", "true");
+      return;
+    }
+    if (phoneMenu) {
+      phoneMenu.hidden = true;
+      phoneMenu.classList.remove("open");
+    }
+    if (scrim) scrim.classList.remove("open");
   };
 
-  if (burger) burger.addEventListener("click", openMenu);
+  if (burger) burger.addEventListener("click", () => {
+    const open = burger.getAttribute("aria-expanded") === "true";
+    if (open) closeMenu();
+    else openMenu();
+  });
   if (closeBtn) closeBtn.addEventListener("click", closeMenu);
   if (overlay) {
     overlay.addEventListener("click", (e) => {
       if (e.target === overlay) closeMenu();
     });
   }
+  if (scrim) scrim.addEventListener("click", closeMenu);
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") closeMenu();
   });

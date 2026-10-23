@@ -3,6 +3,7 @@
 .guar-section {
   background: #fff;
   padding: 48px 20px 80px;
+  overflow: visible;
 }
 
 .guar-track {
@@ -10,6 +11,7 @@
   height: 300vh;
   max-width: 1180px;
   margin: 0 auto;
+  overflow: visible;
 }
 
 .guar-pin {
@@ -20,6 +22,17 @@
   max-height: 860px;
   display: flex;
   align-items: stretch;
+}
+
+@media (min-width: 901px) {
+  .guar-pin {
+    position: sticky !important;
+    top: 72px !important;
+  }
+
+  .guar-track {
+    height: 300vh !important;
+  }
 }
 
 .guar-card {
@@ -306,20 +319,21 @@
     height: auto;
     max-height: none;
     min-height: 0;
+    padding: 24px 12px 40px;
   }
 
   .guar-card {
     grid-template-columns: 1fr;
-    border-radius: 28px;
+    border-radius: 24px;
   }
 
   .guar-text {
-    padding: 32px 24px 16px;
+    padding: 28px 18px 12px;
   }
 
   .guar-visual {
-    margin: 8px 16px 16px;
-    min-height: 280px;
+    margin: 8px 12px 14px;
+    min-height: 240px;
     position: relative;
   }
 
@@ -327,13 +341,16 @@
     position: absolute;
   }
 
-  /* On mobile show all bodies expanded for active only still works via JS/click */
   .guar-step {
-    opacity: 0.5;
+    opacity: 0.55;
   }
 
   .guar-step.is-active {
     opacity: 1;
+  }
+
+  .guar-step-title {
+    font-size: 16px;
   }
 }
 
