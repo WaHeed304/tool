@@ -1,0 +1,172 @@
+/* Before You Buy — two-column FAQ (Buzzoid style) */
+
+.buy-faq {
+  background: #fff;
+  padding: 80px 24px 88px;
+}
+
+.buy-faq-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(240px, 340px) 1fr;
+  gap: 56px 72px;
+  align-items: start;
+}
+
+.buy-faq-left {
+  position: sticky;
+  top: 100px;
+}
+
+.buy-faq-title {
+  font-size: clamp(32px, 4vw, 44px);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.12;
+  color: #1a1d23;
+  margin: 0 0 16px;
+  position: relative;
+  display: inline-block;
+}
+
+.buy-faq-sparks {
+  position: absolute;
+  top: -6px;
+  left: 0.55em;
+  color: #ff4f00;
+  font-size: 11px;
+  letter-spacing: 3px;
+  line-height: 1;
+  pointer-events: none;
+}
+
+.buy-faq-sub {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #6b7280;
+  font-weight: 500;
+  margin: 0 0 28px;
+  max-width: 300px;
+}
+
+.buy-faq-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 10px 10px 22px;
+  border-radius: 999px;
+  background: #eef0f5;
+  color: #1a1d23;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.15s ease, transform 0.15s ease;
+}
+
+.buy-faq-cta:hover {
+  background: #e1e5ee;
+  color: #1a1d23;
+  transform: translateY(-1px);
+}
+
+.buy-faq-cta-arrow {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #1a1d23;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.buy-faq-list {
+  border-top: 1px solid #e5e7eb;
+}
+
+.buy-faq-item {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.buy-faq-item button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 22px 4px;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  font-family: inherit;
+  text-align: left;
+  color: #1a1d23;
+}
+
+.buy-faq-item button h3 {
+  margin: 0;
+  font-size: clamp(17px, 1.5vw, 20px);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.35;
+  color: inherit;
+}
+
+.buy-faq-toggle {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  border: 1.5px solid #d1d5db;
+  background: #fff;
+  color: #6b7280;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  line-height: 1;
+  flex-shrink: 0;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+
+.buy-faq-item.open .buy-faq-toggle {
+  background: #1a1d23;
+  border-color: #1a1d23;
+  color: #fff;
+}
+
+.buy-faq-answer {
+  display: none;
+  padding: 0 48px 22px 4px;
+  font-size: 15.5px;
+  line-height: 1.65;
+  color: #6b7280;
+  font-weight: 500;
+  max-width: 560px;
+}
+
+.buy-faq-item.open .buy-faq-answer {
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .buy-faq {
+    padding: 56px 20px 64px;
+  }
+
+  .buy-faq-inner {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .buy-faq-left {
+    position: relative;
+    top: auto;
+  }
+
+  .buy-faq-sub {
+    max-width: none;
+  }
+}

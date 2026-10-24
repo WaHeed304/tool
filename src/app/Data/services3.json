@@ -1,0 +1,134 @@
+[
+  {
+    "addclass": "service5-items",
+    "img2": "/assets/img/service/service5-box1-img1.png",
+    "title": "Ahrefs",
+    "desc": "Ahrefs is a popular and powerful SEO tool used by digital marketers, SEO professionals, and website owners to analyze and optimize their websites for search engines. Ahrefs provides tools and features, including keyword research, competitor analysis, backlink analysis, site audits, and rank tracking.",   
+    "list1": "Keyword Research",
+    "list2": "Backlink Analysis",
+    "list3": "Site Audit",
+    "list4": "Competitor Analysis",
+    "btnLink": "/service/service-details"
+  },
+  {
+    "addclass": "service5-items service5-items2",
+    "img2": "/assets/img/service/service5-box2-img1.png",
+    "title": "SEMrush",
+    "desc": "SEMrush is a popular all-in-one digital marketing tool used by SEO professionals, digital marketers, and website owners to analyze and optimize their online presence. The tool provides features, including keyword research, site audit, backlink analysis, competitor research, and rank tracking.",   
+    "list1": "Digital Marketing",
+    "list2": "Competitor Analysis",
+    "list3": "Rank Tracking",
+    "list4": "PPC Management",
+    "btnLink": "/service/service-details"
+  },
+  {
+    "addclass": "service5-items service5-items3",
+    "img2": "/assets/img/service/service5-box3-img1.png",
+    "title": "Moz Pro",
+    "desc": "Moz Pro is a comprehensive SEO toolset used by digital marketers, SEO professionals, and website owners to improve search engine rankings and drive more traffic. The toolset provides a range of features, including keyword research, site audits, backlink analysis, and rank tracking.",   
+    "list1": "Domain Authority",
+    "list2": "Link Building",
+    "list3": "Local SEO",
+    "list4": "Technical SEO",
+    "btnLink": "/service/service-details"
+  },
+  {
+    "addclass": "service5-items service5-items4",
+    "img2": "/assets/img/service/service5-box4-img1.png",
+    "title": "Majestic SEO",
+    "desc": "Majestic SEO is a popular backlink analysis tool used by digital marketers, SEO professionals, and website owners to analyze and optimize their website's backlink profile. The tool comprehensively analyzes a website's backlink profile, including the number of backlinks, referring domains, and anchor text.",   
+    "list1": "Trust Flow",
+    "list2": "Citation Flow",
+    "list3": "Backlink Analysis",
+    "list4": "Link Intelligence",
+    "btnLink": "/service/service-details"
+  },
+  {
+    "addclass": "service5-items",
+    "img2": "/assets/img/service/service5-box1-img1.png",
+    "title": "WooRank",
+    "desc": "WooRank is an SEO and website analysis tool used by digital marketers, SEO professionals, and website owners to analyze and optimize their website's performance. The tool comprehensively reports a website's performance, including its SEO, mobile-friendliness, usability, and security.",   
+    "list1": "Site Crawl",
+    "list2": "Mobile Analysis",
+    "list3": "Usability",
+    "list4": "Security Check",
+    "btnLink": "/service/service-details"
+  },
+  {
+    "addclass": "service5-items service5-items2",
+    "img2": "/assets/img/service/service5-box2-img1.png",
+    "title": "Google Keyword Planner",
+    "desc": "Google Keyword Planner is a free keyword research tool on the Google Ads platform. It lets you discover new keywords, view search volume data and analyze keyword competition. You can also use this tool to identify the best keywords to target in your ad campaigns.",   
+    "list1": "Free Tool",
+    "list2": "Search Volume",
+    "list3": "Competition",
+    "list4": "Keyword Ideas",
+    "btnLink": "/service/service-details"
+  },
+  {
+    "addclass": "service5-items service5-items3",
+    "img2": "/assets/img/service/service5-box3-img1.png",
+    "title": "Keyword Tool",
+    "desc": "Keyword Tool is a free keyword research tool that allows you to discover new keywords, view search volume data, and analyze keyword competition. This tool generates keyword ideas based on Google Autocomplete, which can help you identify long-tail keywords relevant to your business.",   
+    "list1": "Autocomplete",
+    "list2": "Long-tail Keywords",
+    "list3": "Free",
+    "list4": "Volume Data",
+    "btnLink": "/service/service-details"
+  },
+  {
+    "addclass": "service5-items service5-items4",
+    "img2": "/assets/img/service/service5-box4-img1.png",
+    "title": "BuzzSumo",
+    "desc": "BuzzSumo is a tool that allows you to analyze your website's social media performance and identify any opportunities for improvement. This tool provides insights into your website's social media shares, likes, and engagement. It also allows you to identify the most popular content in your industry and find new social media influencers to collaborate with.",   
+    "list1": "Social Media",
+    "list2": "Content Analysis",
+    "list3": "Influencer Research",
+    "list4": "Trend Analysis",
+    "btnLink": "/service/service-details"
+  },
+  {
+    "addclass": "service5-items",
+    "img2": "/assets/img/service/service5-box1-img1.png",
+    "title": "Hootsuite",
+    "desc": "Hootsuite is a social media management tool allowing you to manage all your social media accounts in one place. This tool provides various features, including scheduling social media posts, tracking your social media performance, and collaborating with team members. Hootsuite can help you to streamline your social media marketing efforts and improve your website's off-page SEO.",   
+    "list1": "Social Management",
+    "list2": "Scheduling",
+    "list3": "Analytics",
+    "list4": "Team Collaboration",
+    "btnLink": "/service/service-details"
+  },
+  {
+    "addclass": "service5-items service5-items2",
+    "img2": "/assets/img/service/service5-box2-img1.png",
+    "title": "Grammarly",
+    "desc": "Grammarly is a writing assistant tool that helps improve your content quality. It checks for grammar, spelling, punctuation, and style issues. For SEO purposes, high-quality content is crucial for better rankings and user engagement.",   
+    "list1": "Content Quality",
+    "list2": "Grammar Check",
+    "list3": "Writing Assistant",
+    "list4": "Style Improvement",
+    "btnLink": "/service/service-details"
+  },
+  {
+    "addclass": "service5-items service5-items3",
+    "img2": "/assets/img/service/service5-box3-img1.png",
+    "title": "Canva Pro",
+    "desc": "Canva Pro is a graphic design tool that helps create visual content for your website and social media. High-quality visuals are important for user engagement and can indirectly impact your SEO performance through better user experience.",   
+    "list1": "Graphic Design",
+    "list2": "Visual Content",
+    "list3": "Templates",
+    "list4": "Brand Assets",
+    "btnLink": "/service/service-details"
+  },
+  {
+    "addclass": "service5-items service5-items4",
+    "img2": "/assets/img/service/service5-box4-img1.png",
+    "title": "ChatGPT",
+    "desc": "ChatGPT is an AI-powered tool that can help with content creation, keyword research, and various SEO tasks. It can assist in generating content ideas, writing meta descriptions, and providing SEO recommendations for better search engine optimization.",   
+    "list1": "AI Content",
+    "list2": "Content Ideas",
+    "list3": "SEO Assistance",
+    "list4": "Meta Descriptions",
+    "btnLink": "/service/service-details"
+  }
+]

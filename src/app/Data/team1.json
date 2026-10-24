@@ -1,0 +1,29 @@
+[
+  {
+    "img": "/assets/img/team/team1-img1.png",  
+    "title": "John Smith",
+    "desc": "CEO & Founder",
+    "twitter": "#",
+    "linkedin": "#",
+    "instagram": "#",
+    "facebook": "#"
+  },
+  {
+    "img": "/assets/img/team/team1-img2.png",  
+    "title": "Sarah Johnson",
+    "desc": "CTO",
+    "twitter": "#",
+    "linkedin": "#",
+    "instagram": "#",
+    "facebook": "#"
+  },
+  {
+    "img": "/assets/img/team/team1-img3.png",  
+    "title": "Mike Davis",
+    "desc": "Customer Success Manager",
+    "twitter": "#",
+    "linkedin": "#",
+    "instagram": "#",
+    "facebook": "#"
+  }
+]
