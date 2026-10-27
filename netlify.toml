@@ -1,5 +1,6 @@
 [build]
-  publish = "."
+  publish = "html-static-site"
+  command = "echo 'static site'"
 
 [[headers]]
   for = "/*"
