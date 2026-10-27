@@ -37,10 +37,10 @@
             Tools <i class="bi bi-chevron-down"></i>
           </button>
           <div id="services-menu" class="bz-nav-menu" hidden>
-            <a href="/tools#seo">SEO Tools</a>
-            <a href="/tools#content">Content &amp; AI Writing</a>
-            <a href="/tools#design">Design Tools</a>
-            <a href="/tools#amazon">Amazon Tools</a>
+            <a href="/tools/seo">SEO Tools</a>
+            <a href="/tools/content">Content &amp; AI Writing</a>
+            <a href="/tools/design">Design Tools</a>
+            <a href="/tools/amazon">Amazon Tools</a>
             <a href="/tools">All Tools</a>
             <a href="/plans">Plans</a>
           </div>
@@ -2181,10 +2181,35 @@
       if (clearBtn) clearBtn.hidden = !query;
     }
 
+    var map = { seo: "seo", content: "content", design: "design", amazon: "amazon", ai: "ai", adspy: "adspy", spy: "adspy" };
+
+    function catUrl(cat) {
+      if (!cat || cat === "all") return "/tools";
+      // /tools/adspy is a product page — use query for that category only
+      if (cat === "adspy") return "/tools?cat=adspy";
+      return "/tools/" + cat;
+    }
+
+    function readCatFromLocation() {
+      var params = new URLSearchParams(location.search || "");
+      var q = (params.get("cat") || "").toLowerCase();
+      if (q && map[q]) return map[q];
+
+      var parts = (location.pathname || "").replace(/\/+$/, "").split("/");
+      var last = parts[parts.length - 1] || "";
+      if (last === "tools" || last === "tools.html") return "all";
+      if (map[last]) return map[last];
+
+      // Legacy hash support (old bookmarks)
+      var hash = (location.hash || "").replace("#", "").toLowerCase();
+      if (hash && map[hash]) return map[hash];
+      return "all";
+    }
+
     buttons.forEach(function (btn) {
       btn.addEventListener("click", function () {
         activeCat = btn.getAttribute("data-filter") || "all";
-        history.replaceState(null, "", activeCat === "all" ? "tools.html" : "tools.html#" + activeCat);
+        history.replaceState(null, "", catUrl(activeCat));
         apply();
       });
     });
@@ -2204,17 +2229,7 @@
       });
     }
 
-    var hash = (location.hash || "").replace("#", "");
-    var map = { seo: "seo", content: "content", design: "design", amazon: "amazon", ai: "ai", adspy: "adspy", spy: "adspy" };
-    if (hash && map[hash]) {
-      activeCat = map[hash];
-    } else if (hash) {
-      var byId = document.getElementById(hash);
-      if (byId && byId.classList.contains("tm-card")) {
-        activeCat = byId.getAttribute("data-cat") || "all";
-        setTimeout(function () { byId.scrollIntoView({ behavior: "smooth", block: "center" }); }, 80);
-      }
-    }
+    activeCat = readCatFromLocation();
     apply();
   })();
   </script>

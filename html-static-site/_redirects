@@ -23,6 +23,13 @@
 /blog-4                   /blog-4.html            200
 /blog-5                   /blog-5.html            200
 
+# Category filters on tools marketplace (must be above /tools/* splat)
+/tools/seo                /tools.html             200
+/tools/content            /tools.html             200
+/tools/design             /tools.html             200
+/tools/amazon             /tools.html             200
+/tools/ai                 /tools.html             200
+
 # Tool product pages + blog posts (extensionless)
 /tools/*                  /tools/:splat.html      200
 /blog/*                   /blog/:splat.html       200

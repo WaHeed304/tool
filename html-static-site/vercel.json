@@ -3,5 +3,12 @@
   "trailingSlash": false,
   "redirects": [
     { "source": "/index.html", "destination": "/", "permanent": true }
+  ],
+  "rewrites": [
+    { "source": "/tools/seo", "destination": "/tools.html" },
+    { "source": "/tools/content", "destination": "/tools.html" },
+    { "source": "/tools/design", "destination": "/tools.html" },
+    { "source": "/tools/amazon", "destination": "/tools.html" },
+    { "source": "/tools/ai", "destination": "/tools.html" }
   ]
 }
