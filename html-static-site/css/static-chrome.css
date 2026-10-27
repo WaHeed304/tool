@@ -37,10 +37,15 @@
   display: none !important;
 }
 
-.bz-nav-drop:hover .bz-nav-menu:not([hidden]),
-.bz-nav-drop:focus-within .bz-nav-menu:not([hidden]),
+/* Tools dropdown: open on hover (no click needed) */
+.bz-nav-drop:hover .bz-nav-menu,
+.bz-nav-drop:focus-within .bz-nav-menu,
 .bz-nav-menu.is-open {
-  display: flex;
+  display: flex !important;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0);
 }
 
 .bz-service-grid[hidden] {

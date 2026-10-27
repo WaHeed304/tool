@@ -1,8 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none">
-  <rect width="128" height="128" rx="28" fill="#0F172A"/>
-  <rect x="34" y="30" width="60" height="68" rx="8" fill="#fff"/>
-  <rect x="44" y="44" width="40" height="6" rx="3" fill="#FF4F00"/>
-  <rect x="44" y="58" width="40" height="5" rx="2.5" fill="#E5E7EB"/>
-  <rect x="44" y="70" width="32" height="5" rx="2.5" fill="#E5E7EB"/>
-  <rect x="44" y="82" width="36" height="5" rx="2.5" fill="#E5E7EB"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128"><rect width="128" height="128" rx="28" fill="#0f766e"/><text x="64" y="78" text-anchor="middle" font-family="Arial,sans-serif" font-size="44" font-weight="700" fill="#fff">AB</text></svg>

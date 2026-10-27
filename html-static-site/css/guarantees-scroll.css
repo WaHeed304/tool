@@ -8,30 +8,34 @@
 
 .guar-track {
   position: relative;
-  height: 300vh;
+  /* Normal height — sticky 300vh track trapped page scroll in the middle */
+  height: auto;
   max-width: 1180px;
   margin: 0 auto;
   overflow: visible;
 }
 
 .guar-pin {
-  position: sticky;
-  top: 72px;
-  height: calc(100vh - 96px);
-  min-height: 640px;
-  max-height: 860px;
+  position: relative;
+  top: auto;
+  height: auto;
+  min-height: 0;
+  max-height: none;
   display: flex;
   align-items: stretch;
 }
 
 @media (min-width: 901px) {
   .guar-pin {
-    position: sticky !important;
-    top: 72px !important;
+    position: relative !important;
+    top: auto !important;
+    height: auto !important;
+    min-height: 560px;
+    max-height: none;
   }
 
   .guar-track {
-    height: 300vh !important;
+    height: auto !important;
   }
 }
 

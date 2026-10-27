@@ -49,6 +49,11 @@ canvas {
     height: 28px;
   }
 
+  .bz-logo-img {
+    height: 30px;
+    max-width: 140px;
+  }
+
   .bz-logo-text {
     font-size: 18px;
   }
