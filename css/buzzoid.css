@@ -182,7 +182,7 @@ body {
 
 .bz-nav-menu {
   position: absolute;
-  top: 100%;
+  top: calc(100% - 2px);
   left: 0;
   min-width: 180px;
   background: var(--bz-white);
@@ -193,6 +193,31 @@ body {
   display: flex;
   flex-direction: column;
   z-index: 20;
+  /* Hover-open: keep click-free on desktop */
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(4px);
+  transition: opacity 0.15s ease, transform 0.15s ease, visibility 0.15s;
+}
+
+/* Bridge gap so cursor can move into the menu without closing */
+.bz-nav-drop::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  height: 12px;
+}
+
+.bz-nav-drop:hover .bz-nav-menu,
+.bz-nav-drop:focus-within .bz-nav-menu,
+.bz-nav-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0);
 }
 
 .bz-nav-menu a {

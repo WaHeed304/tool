@@ -57,28 +57,29 @@
     if (e.key === "Escape") closeMenu();
   });
 
-  /* —— Desktop Tools dropdown —— */
+  /* —— Desktop Tools dropdown (open on hover / focus) —— */
   const servicesTrigger = document.querySelector("[data-services-trigger]");
   const servicesMenu = document.getElementById("services-menu");
-  if (servicesTrigger && servicesMenu) {
+  const servicesDrop = servicesTrigger && servicesTrigger.closest(".bz-nav-drop");
+  if (servicesTrigger && servicesMenu && servicesDrop) {
+    const openServices = () => {
+      servicesTrigger.setAttribute("aria-expanded", "true");
+      servicesMenu.hidden = false;
+      servicesMenu.classList.add("is-open");
+    };
+    const closeServices = () => {
+      servicesTrigger.setAttribute("aria-expanded", "false");
+      servicesMenu.classList.remove("is-open");
+    };
+    servicesDrop.addEventListener("mouseenter", openServices);
+    servicesDrop.addEventListener("mouseleave", closeServices);
+    servicesDrop.addEventListener("focusin", openServices);
+    servicesDrop.addEventListener("focusout", (e) => {
+      if (!servicesDrop.contains(e.relatedTarget)) closeServices();
+    });
+    // Prevent click toggle — hover opens it
     servicesTrigger.addEventListener("click", (e) => {
       e.preventDefault();
-      const open = servicesTrigger.getAttribute("aria-expanded") === "true";
-      servicesTrigger.setAttribute("aria-expanded", String(!open));
-      if (open) {
-        servicesMenu.hidden = true;
-        servicesMenu.classList.remove("is-open");
-      } else {
-        servicesMenu.hidden = false;
-        servicesMenu.classList.add("is-open");
-      }
-    });
-    document.addEventListener("click", (e) => {
-      if (!servicesTrigger.contains(e.target) && !servicesMenu.contains(e.target)) {
-        servicesTrigger.setAttribute("aria-expanded", "false");
-        servicesMenu.hidden = true;
-        servicesMenu.classList.remove("is-open");
-      }
     });
   }
 
