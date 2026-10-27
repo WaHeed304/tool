@@ -1,7 +1,7 @@
-# Clean home URL (never show /index.html)
+# Clean home URL
 /index.html               /                       301
 
-# Netlify — pretty URLs (extensionless)
+# Pretty URLs — root pages
 /privacy-policy           /privacy-policy.html    200
 /privacy-policy/          /privacy-policy.html    200
 /terms-of-service         /terms-of-service.html  200
@@ -18,6 +18,15 @@
 /tools                    /tools.html             200
 /pricing                  /pricing.html           200
 /pricing/                 /pricing.html           200
+/blog-2                   /blog-2.html            200
+/blog-3                   /blog-3.html            200
+/blog-4                   /blog-4.html            200
+/blog-5                   /blog-5.html            200
+
+# Tool product pages + blog posts (extensionless)
+/tools/*                  /tools/:splat.html      200
+/blog/*                   /blog/:splat.html       200
+
 # Force clean URLs when someone hits .html
 /plans.html               /plans                  301
 /faq.html                 /faq                    301
@@ -28,3 +37,9 @@
 /pricing.html             /pricing                301
 /privacy-policy.html      /privacy-policy         301
 /terms-of-service.html    /terms-of-service       301
+/blog-2.html              /blog-2                 301
+/blog-3.html              /blog-3                 301
+/blog-4.html              /blog-4                 301
+/blog-5.html              /blog-5                 301
+/tools/*.html             /tools/:splat           301
+/blog/*.html              /blog/:splat            301
