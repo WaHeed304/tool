@@ -181,33 +181,12 @@
     });
   };
 
-  if (guarTrack && guarCard && guarSteps.length) {
-    const syncGuarFromScroll = () => {
-      if (window.innerWidth < 901 || reduceMotion) return;
-      const rect = guarTrack.getBoundingClientRect();
-      const trackH = guarTrack.offsetHeight;
-      const viewH = window.innerHeight;
-      const scrolled = -rect.top;
-      const range = Math.max(1, trackH - viewH);
-      const progress = Math.min(1, Math.max(0, scrolled / range));
-      const next = Math.min(2, Math.floor(progress * 3));
-      if (next !== guarIndex) setGuar(next);
-    };
-
-    window.addEventListener("scroll", syncGuarFromScroll, { passive: true });
-    window.addEventListener("resize", syncGuarFromScroll);
-    syncGuarFromScroll();
-
+  if (guarCard && guarSteps.length) {
+    /* Click steps only — no sticky scroll hijack (keeps page scrolling normally) */
     guarSteps.forEach((step) => {
       step.addEventListener("click", () => {
         const i = Number(step.getAttribute("data-guar-step"));
         setGuar(i);
-        if (window.innerWidth < 901 || reduceMotion) return;
-        const rect = guarTrack.getBoundingClientRect();
-        const trackTop = window.scrollY + rect.top;
-        const range = Math.max(1, guarTrack.offsetHeight - window.innerHeight);
-        const targetY = trackTop + (i / 3) * range + 8;
-        window.scrollTo({ top: targetY, behavior: reduceMotion ? "auto" : "smooth" });
       });
     });
   }
