@@ -1,0 +1,354 @@
+/* Shared mobile / tablet responsive hardening — all pages */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  max-width: 100%;
+}
+
+/* Mobile only: clip horizontal bleed. On desktop this breaks position:sticky scroll stacks. */
+@media (max-width: 899px) {
+  html,
+  body {
+    overflow-x: clip;
+  }
+}
+
+img,
+svg,
+video,
+canvas {
+  max-width: 100%;
+  height: auto;
+}
+
+/* —— Buzzoid header (index + inner pages) —— */
+@media (max-width: 899px) {
+  .bz-header-bar {
+    height: 64px;
+    padding: 0 14px;
+    gap: 10px;
+  }
+
+  .bz-header-spacer {
+    height: 64px;
+  }
+
+  .bz-logo-mark {
+    width: 28px;
+    height: 28px;
+  }
+
+  .bz-logo-img {
+    height: 30px;
+    max-width: 140px;
+  }
+
+  .bz-logo-text {
+    font-size: 18px;
+  }
+
+  .bz-nav-desk,
+  .bz-login-link {
+    display: none !important;
+  }
+
+  .bz-menu-toggle {
+    display: inline-flex !important;
+  }
+
+  .bz-hero {
+    padding: 48px 0 36px;
+  }
+
+  .bz-hero-inner {
+    padding: 0 16px;
+    max-width: 100%;
+  }
+
+  .bz-hero h1 {
+    font-size: clamp(28px, 8.2vw, 40px);
+    line-height: 1.12;
+    margin-bottom: 16px;
+  }
+
+  .bz-hero h1 .hl-icon {
+    border-radius: 8px;
+  }
+
+  .bz-hero-sub {
+    font-size: 15px;
+    padding: 0 4px;
+  }
+
+  .bz-services-section {
+    padding: 0 12px 32px;
+  }
+
+  .bz-selector {
+    border-radius: 22px;
+  }
+
+  .bz-tabs {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .bz-tab {
+    padding: 14px 6px;
+    font-size: 12px;
+    gap: 4px;
+    flex-direction: column;
+  }
+
+  .bz-tab i {
+    font-size: 15px;
+  }
+
+  .bz-tab.active.curve-right,
+  .bz-tab.active.curve-left,
+  .bz-tab.active.curve-both {
+    border-radius: 16px 16px 0 0;
+  }
+
+  .bz-tab.active.curve-right::after,
+  .bz-tab.active.curve-left::before,
+  .bz-tab.active.curve-both::before,
+  .bz-tab.active.curve-both::after {
+    display: none;
+  }
+
+  .bz-service-grid {
+    padding: 14px;
+    gap: 10px;
+  }
+
+  .bz-service-card {
+    min-height: 0;
+    padding: 16px 14px 20px;
+  }
+
+  .bz-seen-section,
+  .bz-tools-intro,
+  .bz-story-section {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .bz-h2,
+  .why-h2,
+  .guar-title,
+  .buy-faq-title {
+    font-size: clamp(28px, 8vw, 40px) !important;
+    line-height: 1.15;
+  }
+}
+
+@media (max-width: 480px) {
+  .bz-tab span {
+    font-size: 11px;
+  }
+
+  .bz-logo-text {
+    font-size: 16px;
+  }
+
+  .site-foot-top,
+  .site-foot-mid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .site-foot-pay img {
+    width: 40px;
+    height: 27px;
+  }
+}
+
+/* —— Stack / Why / Guarantees / FAQ / Get Started —— */
+@media (max-width: 900px) {
+  .stack-wrap,
+  .why-wrap,
+  .guar-wrap {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .stack-card {
+    padding: 28px 18px 14px;
+    border-radius: 24px;
+  }
+
+  .stack-card-art,
+  .why-row-visual,
+  .guar-visual {
+    min-height: 220px;
+  }
+
+  .stack-bullets li,
+  .why-row-copy p,
+  .guar-step-body p {
+    font-size: 14px;
+  }
+
+  .buy-faq {
+    padding: 48px 16px 56px;
+  }
+
+  .buy-faq-item button,
+  .buy-faq-q {
+    font-size: 15px;
+    text-align: left;
+  }
+
+  .gs-pin {
+    padding: 72px 16px 48px;
+    min-height: auto;
+  }
+
+  .gs-heading {
+    flex-wrap: wrap;
+    white-space: normal;
+    font-size: clamp(32px, 11vw, 48px);
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+
+  .gs-face {
+    width: 48px;
+    height: 48px;
+  }
+
+  .gs-copy {
+    margin-bottom: 28px;
+  }
+
+  .gs-copy p {
+    font-size: 15px;
+  }
+
+  .gs-picker {
+    border-radius: 20px;
+    padding: 16px 12px 10px;
+  }
+
+  .gs-tool-row {
+    padding: 12px 10px;
+    gap: 10px;
+  }
+}
+
+/* —— Inner pages (tokens/style.css system) —— */
+@media (max-width: 767px) {
+  .wrapper {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    max-width: 100%;
+  }
+
+  .page-hero {
+    padding: 2rem 0 1.75rem;
+  }
+
+  .page-hero h1 {
+    font-size: clamp(1.6rem, 7vw, 2.1rem) !important;
+    line-height: 1.2;
+    padding: 0 4px;
+  }
+
+  .page-hero p {
+    font-size: 0.95rem;
+    padding: 0 4px;
+  }
+
+  .page-content {
+    padding: 32px 0 48px;
+  }
+
+  .pricing-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1rem;
+  }
+
+  .price-card {
+    padding: 1.25rem;
+  }
+
+  .price-amount {
+    font-size: 2rem !important;
+  }
+
+  .catalog-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .catalog-card {
+    padding: 1rem;
+  }
+
+  .form-grid {
+    max-width: 100%;
+  }
+
+  .form-field input,
+  .form-field textarea,
+  .form-field select {
+    font-size: 16px; /* prevent iOS zoom */
+  }
+
+  .site-footer .footer-grid,
+  .footer-grid {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 1.5rem 1rem;
+  }
+
+  .prose {
+    padding: 0 2px;
+  }
+
+  details.faq-item,
+  .faq-list details {
+    padding: 0.85rem 0;
+  }
+
+  .faq-list summary {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 480px) {
+  .site-footer .footer-grid,
+  .footer-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .phone-keys .btn-cta {
+    display: none;
+  }
+}
+
+/* Tap targets */
+@media (max-width: 899px) {
+  .bz-menu-nav > li > a,
+  .phone-menu a,
+  .catalog-card a,
+  .price-card .btn-cta,
+  .btn-cta {
+    min-height: 44px;
+  }
+
+  .bz-icon-btn,
+  .icon-btn {
+    min-width: 44px;
+    min-height: 44px;
+  }
+}

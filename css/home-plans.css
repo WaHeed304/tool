@@ -1,0 +1,384 @@
+/* Homepage + plans page — Toolstap look, live-site plan content */
+
+/* Plans page hero (scoped — does not change home) */
+.pl-page .bz-hero {
+  padding-bottom: 28px;
+}
+
+.pl-page .bz-hero h1 {
+  max-width: 18ch;
+  margin-inline: auto;
+}
+
+.pl-trust {
+  width: min(1120px, calc(100% - 48px));
+  margin: 0 auto 8px;
+}
+
+.pl-cta {
+  background: #f6f7fa;
+  padding: 64px 24px 80px;
+  text-align: center;
+}
+
+.pl-cta-inner {
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.pl-cta h2 {
+  margin: 0 0 12px;
+  font-size: clamp(1.75rem, 3.5vw, 2.35rem);
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  color: #1a1d23;
+}
+
+.pl-cta p {
+  margin: 0 0 24px;
+  font-size: 1.05rem;
+  line-height: 1.55;
+  color: #6b7280;
+}
+
+.pl-cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.pl-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 24px;
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 0.15s, background 0.15s;
+}
+
+.pl-cta-btn:hover {
+  transform: translateY(-1px);
+}
+
+.pl-cta-btn--primary {
+  background: #ff4f00;
+  color: #fff;
+}
+
+.pl-cta-btn--primary:hover {
+  background: #e84600;
+  color: #fff;
+}
+
+.pl-cta-btn--ghost {
+  background: #fff;
+  color: #1a1d23;
+  border: 1px solid #e5e7eb;
+}
+
+.pl-cta-btn--ghost:hover {
+  color: #1a1d23;
+  border-color: #d1d5db;
+}
+
+.hm-plans {
+  background: #fff;
+  padding: 72px 24px 88px;
+}
+
+.pl-page .hm-plans {
+  padding-top: 40px;
+}
+
+.hm-plans-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.hm-plans-head {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.hm-plans-head .bz-eyebrow {
+  margin-bottom: 10px;
+}
+
+.hm-plans-head .bz-h2 {
+  margin: 0 0 12px;
+}
+
+.hm-plans-head .bz-lead {
+  margin: 0 auto;
+  max-width: 46ch;
+}
+
+.hm-plans-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+  align-items: stretch;
+}
+
+@media (min-width: 700px) {
+  .hm-plans-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1100px) {
+  .hm-plans-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.hm-plan {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border: 1px solid #e8ebf0;
+  border-radius: 24px;
+  padding: 28px 24px 24px;
+  box-shadow: 0 4px 24px rgba(26, 29, 35, 0.04);
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+
+.hm-plan:hover {
+  border-color: #d1d5db;
+  box-shadow: 0 12px 40px rgba(26, 29, 35, 0.08);
+  transform: translateY(-2px);
+}
+
+.hm-plan.is-featured {
+  background: #1a1d23;
+  border-color: #1a1d23;
+  color: #fff;
+}
+
+.hm-plan.is-featured .hm-plan-tag,
+.hm-plan.is-featured .hm-plan-note,
+.hm-plan.is-featured .hm-plan-price span,
+.hm-plan.is-featured .hm-plan-bullets li {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.hm-plan.is-featured h3,
+.hm-plan.is-featured .hm-plan-price {
+  color: #fff;
+}
+
+.hm-plan.is-featured .hm-plan-tools {
+  border-color: rgba(255, 255, 255, 0.12);
+  background: rgba(0, 0, 0, 0.22);
+}
+
+.hm-plan.is-featured .hm-plan-tools summary {
+  color: #fff;
+}
+
+.hm-plan.is-featured .hm-plan-tools li {
+  color: rgba(255, 255, 255, 0.85);
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.hm-plan-badge {
+  position: absolute;
+  top: -11px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ff4f00;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 5px 12px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.hm-plan-tag {
+  font-size: 13px;
+  font-weight: 600;
+  color: #ff4f00;
+  margin: 0 0 6px;
+}
+
+.hm-plan h3 {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin: 0 0 8px;
+  color: #1a1d23;
+}
+
+.hm-plan-price {
+  font-size: 42px;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  color: #1a1d23;
+  margin: 0 0 6px;
+  line-height: 1;
+}
+
+.hm-plan-price span {
+  font-size: 15px;
+  font-weight: 500;
+  color: #6b7280;
+  letter-spacing: 0;
+}
+
+.hm-plan-note {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 0 0 16px;
+}
+
+.hm-plan-bullets {
+  list-style: none;
+  margin: 0 0 16px;
+  padding: 0;
+}
+
+.hm-plan-bullets li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #2d333f;
+  padding: 5px 0;
+}
+
+.hm-plan-bullets li i {
+  color: #00ba7c;
+  font-size: 14px;
+}
+
+.hm-plan.is-featured .hm-plan-bullets li i {
+  color: #5ee4a8;
+}
+
+.hm-plan-tools {
+  margin: 0 0 18px;
+  border: 1px solid #e8ebf0;
+  border-radius: 14px;
+  background: #f6f7fa;
+  overflow: hidden;
+}
+
+.hm-plan-tools summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 12px 14px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #1a1d23;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  user-select: none;
+}
+
+.hm-plan-tools summary::-webkit-details-marker {
+  display: none;
+}
+
+.hm-plan-tools summary i {
+  transition: transform 0.2s;
+  font-size: 12px;
+}
+
+.hm-plan-tools[open] summary i {
+  transform: rotate(180deg);
+}
+
+.hm-plan-tools ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 14px 12px;
+  max-height: 200px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 8px;
+}
+
+.hm-plan-tools li {
+  font-size: 12px;
+  line-height: 1.35;
+  color: #6b7280;
+  padding: 6px 0;
+  border-bottom: 1px solid #e8ebf0;
+}
+
+.hm-plan-cta {
+  margin-top: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 14px 20px;
+  border-radius: 999px;
+  background: #2d333f;
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  text-decoration: none;
+  transition: opacity 0.15s, transform 0.15s, background 0.15s;
+}
+
+.hm-plan-cta:hover {
+  opacity: 0.92;
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+.hm-plan.is-featured .hm-plan-cta {
+  background: #ff4f00;
+  color: #fff;
+}
+
+.hm-plan.is-featured .hm-plan-cta:hover {
+  background: #e84600;
+  color: #fff;
+}
+
+.hm-plans-foot {
+  margin-top: 32px;
+  text-align: center;
+}
+
+.hm-plans-foot a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #1a1d23;
+  text-decoration: none;
+}
+
+.hm-plans-foot a:hover {
+  color: #ff4f00;
+}
+
+.hm-plans-foot a i {
+  font-size: 14px;
+}
+
+@media (max-width: 640px) {
+  .hm-plans {
+    padding: 56px 16px 64px;
+  }
+
+  .hm-plan-tools ul {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,109 @@
+/* Static HTML chrome — complements buzzoid.css */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.skip-link {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  z-index: 10050;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: #1a1d23;
+  color: #fff;
+  font: 500 14px/1.2 Outfit, sans-serif;
+  transform: translateY(-120%);
+  opacity: 0;
+}
+
+.skip-link:focus {
+  opacity: 1;
+  transform: none;
+}
+
+/* Header CTA removed — Buzzoid-style: logo + nav + Log in only */
+
+.bz-nav-menu[hidden] {
+  display: none !important;
+}
+
+.bz-nav-drop:hover .bz-nav-menu:not([hidden]),
+.bz-nav-drop:focus-within .bz-nav-menu:not([hidden]),
+.bz-nav-menu.is-open {
+  display: flex;
+}
+
+.bz-service-grid[hidden] {
+  display: none !important;
+}
+
+.bz-service-grid.is-active {
+  display: grid;
+}
+
+.bz-acc-body {
+  display: none;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--bz-muted);
+  margin: 0 0 12px;
+}
+
+.bz-acc-body.is-open {
+  display: block;
+}
+
+.bz-trust-avatar-img {
+  height: 32px;
+  width: auto;
+  border-radius: 999px;
+  object-fit: cover;
+}
+
+.bz-contact-strip {
+  text-align: center;
+}
+
+.bz-contact-strip .bz-h2 {
+  text-align: center;
+}
+
+/* Soft page ground like Buzzoid */
+html,
+body {
+  background: #f6f7fa !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+.bz-service-card,
+.bz-service-card strong,
+.bz-service-card .desc {
+  text-decoration: none !important;
+}
+
+.bz-header-bar .bz-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-self: end;
+  flex-wrap: nowrap;
+}
+
+@media (min-width: 900px) {
+  .bz-menu-toggle {
+    display: none !important;
+  }
+}

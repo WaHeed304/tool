@@ -1,0 +1,13 @@
+# Netlify — legal pages (pretty + .html)
+/privacy-policy           /privacy-policy.html    200
+/privacy-policy/          /privacy-policy.html    200
+/terms-of-service         /terms-of-service.html  200
+/terms-of-service/        /terms-of-service.html  200
+/plans                    /plans.html             200
+/plans/                   /plans.html             200
+/faq                      /faq.html               200
+/contact                  /contact.html           200
+/about                    /about.html             200
+/blog                     /blog.html              200
+/tools                    /tools.html             200
+/pricing                  /pricing.html           200

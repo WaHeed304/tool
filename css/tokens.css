@@ -1,0 +1,292 @@
+/* Buzzoid design tokens — Toolstap static build */
+:root {
+  --color-ground: #fff;
+  --color-neutral-950: #1b1b1f;
+  --color-neutral-900: #292f3b;
+  --color-neutral-800: #384354;
+  --color-neutral-790: #3e444f;
+  --color-neutral-775: #434853;
+  --color-neutral-730: #4b505a;
+  --color-neutral-600: #626976;
+  --color-neutral-500: #8a93a3;
+  --color-neutral-450: #b4bdcb;
+  --color-neutral-400: #c3c9d4;
+  --color-neutral-300: #d7dce6;
+  --color-neutral-200: #dce0e8;
+  --color-neutral-175: #e1e7ec;
+  --color-neutral-150: #e9ecf2;
+  --color-neutral-100: #f1f3f7;
+  --color-neutral-50: #f6f7fa;
+  --color-scrim: #292f3b73;
+
+  --color-orange-800: #b54500;
+  --color-orange-700: #d94e00;
+  --color-orange-600: #ea5500;
+  --color-orange-500: #ff5c00;
+  --color-orange-400: #ff7424;
+  --color-orange-200: #ffe3d1;
+  --color-orange-100: #fff3eb;
+  --color-orange-300: #ffd8b3;
+
+  --color-blue-700: #0857c7;
+  --color-blue-600: #0a63e0;
+  --color-blue-500: #0e71fb;
+  --color-blue-400: #2f86fc;
+  --color-blue-200: #b3d1ff;
+  --color-blue-100: #e4f0ff;
+  --color-blue-50: #eaf3ff;
+
+  --color-navy-900: #0b1a29;
+  --color-navy-800: #12263a;
+  --color-navy-700: #1d3b59;
+  --color-navy-600: #2f4a66;
+  --color-navy-200: #a9b8c8;
+  --color-navy-100: #e6ebf1;
+  --color-navy-50: #eef1f5;
+  --color-navy-950: #0e1428;
+
+  --color-purple-800: #612695;
+  --color-purple-600: #7923cf;
+  --color-purple-500: #9d3df0;
+  --color-purple-50: #faf2ff;
+  --color-purple-200: #cfa7fa;
+  --color-purple-950: #302749;
+
+  --color-teal-700: #018577;
+  --color-teal-400: #01d6c0;
+  --color-teal-200: #aaf0e8;
+  --color-teal-100: #a2f4ef;
+
+  --color-lime-800: #798c1c;
+  --color-lime-500: #c3e12d;
+  --color-lime-200: #e3f28f;
+
+  --color-pink-800: #932e6d;
+  --color-pink-500: #ed4ab0;
+  --color-pink-200: #f7a8d8;
+
+  --color-sky-700: #246d9e;
+  --color-sky-400: #3ab0ff;
+  --color-sky-200: #9fd6ff;
+
+  --color-green-700: #24764e;
+  --color-green-600: #1e9e6a;
+  --color-green-500: #2ac395;
+  --color-green-400: #38c793;
+  --color-green-50: #eff7f2;
+
+  --color-red-700: #b63726;
+  --color-red-50: #fff0ec;
+
+  --color-amber-800: #7a4f00;
+  --color-amber-400: #f5a300;
+  --color-amber-50: #fff4d6;
+
+  --color-tint-lavender: #eff0fc;
+  --color-tint-pink: #f2e5ff;
+  --color-tint-orange: #fff0e5;
+  --color-lime: #daf361;
+  --color-mint: #d4f7e9;
+
+  --color-tool-purple: #312749;
+  --color-tool-charcoal: #465364;
+  --color-tool-gray: #686a7f;
+  --color-tool-lavender: #e1e9ff;
+  --color-tool-light: #f6f7fa;
+  --color-tool-border: #c4daf4;
+
+  --color-gradient-orange-start: #ffaa04;
+  --color-gradient-purple-start: #005cd9;
+  --color-gradient-purple-end: #ff55f8;
+  --color-gradient-blue-start: #00d9bf;
+  --color-gradient-blue-end: #06f;
+
+  --color-stone-300: #d4d0cc;
+
+  --font-body: "Open Runde", "Inter Fallback", ui-sans-serif, system-ui, sans-serif;
+  --font-heading: "ES Rebond Grotesque", "Open Runde", "Inter Fallback", sans-serif;
+  --font-sans: var(--font-body);
+  --font-display: var(--font-heading);
+
+  --text-10: 10px;
+  --text-12: 12px;
+  --text-14: 14px;
+  --text-16: 16px;
+  --text-18: 18px;
+  --text-20: 20px;
+  --text-24: 24px;
+  --text-30: 30px;
+  --text-40: 40px;
+  --text-title-phone: 32px;
+  --text-display-phone: 35px;
+  --text-title: clamp(2rem, 1.503rem + 2.339vw, 3rem);
+  --text-display: clamp(2.2rem, 1.616rem + 2.749vw, 3.375rem);
+  --text-hero-phone: 40px;
+  --text-hero: clamp(44px, 14px + 3.906vw, 64px);
+  --text-hero-promise-phone: 35px;
+  --text-hero-promise: clamp(40px, 10px + 3.906vw, 60px);
+
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --tracking-heading: -0.03em;
+  --tracking-body: -0.01em;
+  --tracking-button: 0.01em;
+  --tracking-widest: 0.1em;
+
+  --leading-heading: 1.13;
+  --leading-tight: 1.25;
+  --leading-body: 1.5;
+  --leading-reading: 1.67;
+  --leading-display: 1.06;
+
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+
+  --container-reading: 680px;
+  --container-2_5xl: 720px;
+  --container-content: 1240px;
+  --container-shell: 1320px;
+  --container-selector: 400px;
+
+  --spacing-0_5: 2px;
+  --spacing-1: 4px;
+  --spacing-1_5: 6px;
+  --spacing-2: 8px;
+  --spacing-3: 12px;
+  --spacing-3_5: 14px;
+  --spacing-4: 16px;
+  --spacing-4_5: 18px;
+  --spacing-5: 20px;
+  --spacing-5_5: 22px;
+  --spacing-6: 24px;
+  --spacing-8: 32px;
+  --spacing-10: 40px;
+  --spacing-11: 44px;
+  --spacing-12: 48px;
+  --spacing-14: 56px;
+  --spacing-16: 64px;
+  --spacing-18: 72px;
+  --spacing-20: 80px;
+  --spacing-24: 96px;
+  --spacing-gutter-phone: 24px;
+  --spacing-gutter-tablet: 28px;
+  --spacing-gutter: 40px;
+  --spacing-section: 48px;
+  --spacing-section-phone: 32px;
+  --spacing-section-major: 64px;
+
+  --radius-4: 4px;
+  --radius-6: 6px;
+  --radius-8: 8px;
+  --radius-10: 10px;
+  --radius-12: 12px;
+  --radius-14: 14px;
+  --radius-16: 16px;
+  --radius-20: 20px;
+  --radius-24: 24px;
+  --radius-full: 9999px;
+  --radius-tile: 24%;
+
+  --color-text: var(--color-neutral-900);
+  --color-text-strong: var(--color-neutral-800);
+  --color-text-muted: var(--color-neutral-600);
+  --color-text-subtle: var(--color-neutral-500);
+  --color-text-disabled: var(--color-neutral-400);
+  --color-border-strong: var(--color-neutral-300);
+  --color-border: var(--color-neutral-200);
+  --color-border-hover: var(--color-neutral-450);
+  --color-divider: var(--color-neutral-150);
+  --color-scrollbar: var(--color-neutral-450);
+  --color-fill: var(--color-neutral-100);
+  --color-surface: var(--color-neutral-50);
+  --color-focus: var(--color-neutral-900);
+  --color-brand: var(--color-orange-500);
+  --color-action: var(--color-orange-500);
+  --color-action-hover: var(--color-orange-600);
+  --color-action-press: var(--color-orange-700);
+  --color-action-text: var(--color-orange-800);
+  --color-action-tint: var(--color-orange-100);
+  --color-selection: var(--color-orange-200);
+  --color-on-action: var(--color-ground);
+  --color-success: var(--color-green-600);
+  --color-success-text: var(--color-green-700);
+  --color-success-signal: var(--color-green-400);
+  --color-success-tint: var(--color-green-50);
+  --color-danger-text: var(--color-red-700);
+  --color-danger-tint: var(--color-red-50);
+  --color-rating: var(--color-green-500);
+  --color-rating-empty: var(--color-neutral-175);
+  --color-offer: var(--color-lime);
+  --color-surface-inverse: var(--color-neutral-900);
+  --color-surface-inverse-edge: var(--color-navy-900);
+  --color-surface-accent: var(--color-tool-lavender);
+
+  --shadow-edge: 0 3px 0 var(--color-border-strong);
+  --shadow-edge-sm: 0 2px 0 var(--color-border-strong);
+  --shadow-line: 0 1px 0 var(--color-border-strong);
+  --shadow-float: 0 16px 40px #292f3b2e;
+  --shadow-lift: 0 10px 24px #292f3b14;
+  --shadow-card: 0 1px 2px #0000000a, 0 2px 8px #0000000a;
+  --shadow-edge-action: 0 3px 0 var(--color-action-press);
+  --shadow-button-gloss: inset 0 1px 0 #ffffff45, inset 0 -5px 8px #00000012;
+
+  --ease-standard: cubic-bezier(0.3, 0.7, 0.3, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-soft: cubic-bezier(0.3, 1.4, 0.5, 1);
+  --ease-in-out: cubic-bezier(0.45, 0, 0.2, 1);
+
+  --duration-press: 80ms;
+  --duration-hover: 0.12s;
+  --duration-quick: 0.2s;
+  --duration-state: 0.25s;
+  --duration-move: 0.38s;
+
+  --z-below: -1;
+  --z-sticky: 100;
+  --z-float: 200;
+  --z-scrim: 300;
+  --z-dialog: 400;
+  --z-skip-link: 600;
+
+  --border-width-1: 1px;
+  --border-width-2: 2px;
+  --size-tap-min: var(--spacing-11);
+  --size-icon: var(--spacing-4_5);
+  --size-mark: var(--spacing-3_5);
+  --size-ring: var(--spacing-5_5);
+  --size-logo-header: 150px;
+  --size-logo-header-phone: 132px;
+  --size-menu: 260px;
+  --focus-ring-width: var(--border-width-2);
+  --focus-ring-offset: 2px;
+  --line-label: var(--spacing-5);
+  --line-small: var(--spacing-4_5);
+  --line-copy: var(--spacing-5_5);
+
+  --site-shell: 1320px;
+  --site-gutter: 40px;
+  --site-content: calc(var(--site-shell) - 2 * var(--site-gutter));
+  --section-title-size: 40px;
+  --bz-page-top: var(--spacing-18);
+  --bz-site-header-h: calc(var(--spacing-18) + var(--spacing-2));
+}
+
+@media (width <= 1023px) {
+  :root {
+    --site-gutter: 28px;
+  }
+}
+
+@media (width <= 767px) {
+  :root {
+    --site-gutter: 24px;
+    --section-title-size: 30px;
+    --bz-page-top: var(--spacing-16);
+    --bz-site-header-h: calc(var(--spacing-16) + var(--spacing-2));
+  }
+}

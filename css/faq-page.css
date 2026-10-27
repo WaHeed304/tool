@@ -1,0 +1,475 @@
+/* Help / FAQ — Buzzoid help-center layout (Toolstap only) */
+
+.hp-page {
+  background: #fff;
+}
+
+.hp-shell {
+  width: min(680px, calc(100% - 40px));
+  margin-inline: auto;
+}
+
+/* Hero */
+.hp-hero {
+  padding: 56px 0 40px;
+  text-align: center;
+}
+
+.hp-hero h1 {
+  margin: 0 0 14px;
+  font-size: clamp(2.35rem, 5vw, 3.15rem);
+  font-weight: 800;
+  letter-spacing: -0.045em;
+  line-height: 1.08;
+  color: #1a1d23;
+}
+
+.hp-hero-lead {
+  margin: 0 auto;
+  max-width: 42ch;
+  font-size: 1.02rem;
+  line-height: 1.55;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+/* Topic blocks */
+.hp-block {
+  padding: 8px 0 48px;
+}
+
+.hp-block-title {
+  margin: 0 0 18px;
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: #1a1d23;
+}
+
+/* Soft info cards */
+.hp-card {
+  display: grid;
+  grid-template-columns: minmax(120px, 160px) 1fr;
+  gap: 8px 20px;
+  align-items: center;
+  border-radius: 20px;
+  padding: 20px 22px;
+  margin-bottom: 22px;
+}
+
+.hp-card-blue {
+  background: #e8f1fb;
+}
+
+.hp-card-green {
+  background: #e8f6ef;
+}
+
+.hp-card-gray {
+  background: #eceff4;
+}
+
+.hp-card-art {
+  width: 100%;
+  max-width: 148px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 14px;
+  justify-self: center;
+}
+
+.hp-card-body h3 {
+  margin: 0 0 12px;
+  font-size: 1.05rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #1a1d23;
+  line-height: 1.3;
+}
+
+.hp-steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.hp-steps li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.hp-step-dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #12b76a;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.55rem;
+  flex-shrink: 0;
+}
+
+.hp-card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #1a1d23;
+  text-decoration: none;
+}
+
+.hp-card-link:hover {
+  color: #ff4f00;
+}
+
+.hp-card-link i {
+  font-size: 0.85rem;
+}
+
+.hp-hint {
+  margin: 0 0 14px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a2332;
+}
+
+/* Buzzoid-style panel: one card, hairline rows */
+.hp-panel {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.hp-row {
+  border-bottom: 1px solid #eceef2;
+}
+
+.hp-row:last-child {
+  border-bottom: 0;
+}
+
+.hp-row summary,
+.hp-row-link {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 18px;
+  cursor: pointer;
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: #1a2332;
+  user-select: none;
+  text-decoration: none;
+  background: transparent;
+}
+
+.hp-row summary::-webkit-details-marker {
+  display: none;
+}
+
+.hp-row-link:hover,
+.hp-row summary:hover {
+  color: #1a2332;
+}
+
+.hp-row-ico {
+  width: 18px;
+  flex-shrink: 0;
+  font-size: 1rem;
+  line-height: 1;
+  color: #1a2332;
+  opacity: 0.85;
+}
+
+.hp-row summary span,
+.hp-row-link span {
+  flex: 1;
+  text-align: left;
+  line-height: 1.35;
+}
+
+.hp-row .chev,
+.hp-row-link .chev {
+  color: #9aa3b2;
+  font-size: 0.8rem;
+  flex-shrink: 0;
+  transition: transform 0.18s ease;
+}
+
+.hp-row[open] summary .chev {
+  transform: rotate(180deg);
+}
+
+.hp-row-body {
+  padding: 0 18px 16px 48px;
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: #6b7280;
+}
+
+.hp-row-body p {
+  margin: 0;
+}
+
+.hp-row-body a {
+  color: #ff4f00;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.hp-row-body a:hover {
+  text-decoration: underline;
+}
+
+/* Soft accordion (no icons) */
+.hp-soft {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.hp-soft details {
+  background: #f5f6f8;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.hp-soft summary {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 18px;
+  cursor: pointer;
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: #1a1d23;
+  user-select: none;
+}
+
+.hp-soft summary::-webkit-details-marker {
+  display: none;
+}
+
+.hp-soft summary .chev {
+  color: #9ca3af;
+  font-size: 0.85rem;
+  transition: transform 0.18s ease;
+}
+
+.hp-soft details[open] summary .chev {
+  transform: rotate(180deg);
+}
+
+.hp-soft-body {
+  padding: 0 18px 16px;
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: #6b7280;
+}
+
+.hp-soft-body p {
+  margin: 0;
+}
+
+.hp-soft-body a {
+  color: #ff4f00;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.hp-soft-body a:hover {
+  text-decoration: underline;
+}
+
+/* Support CTA */
+.hp-support {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 20px;
+  align-items: center;
+  background: #f3f4f7;
+  border-radius: 22px;
+  padding: 22px 26px;
+  margin: 8px 0 56px;
+}
+
+.hp-support-photo {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 16px;
+  justify-self: center;
+}
+
+.hp-support h2 {
+  margin: 0 0 8px;
+  font-size: 1.2rem;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  color: #1a1d23;
+}
+
+.hp-support p {
+  margin: 0 0 16px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #6b7280;
+  max-width: 36ch;
+}
+
+.hp-support-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 22px;
+  border-radius: 999px;
+  background: #ff4f00;
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.15s ease, transform 0.15s ease;
+}
+
+.hp-support-btn:hover {
+  background: #e84600;
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+/* More questions */
+.hp-more {
+  padding: 0 0 72px;
+}
+
+.hp-more-title {
+  margin: 0 0 8px;
+  font-size: 1.45rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: #1a1d23;
+}
+
+.hp-faq {
+  border-top: 1px solid #e8ebf0;
+}
+
+.hp-faq details {
+  border-bottom: 1px solid #e8ebf0;
+}
+
+.hp-faq summary {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a1d23;
+  user-select: none;
+}
+
+.hp-faq summary::-webkit-details-marker {
+  display: none;
+}
+
+.hp-faq summary .chev {
+  color: #9ca3af;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+  transition: transform 0.18s ease;
+}
+
+.hp-faq details[open] summary .chev {
+  transform: rotate(180deg);
+}
+
+.hp-faq-body {
+  padding: 0 4px 20px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #6b7280;
+}
+
+.hp-faq-body p {
+  margin: 0;
+}
+
+.hp-faq-body a {
+  color: #ff4f00;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.hp-faq-body a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+  .hp-shell {
+    width: calc(100% - 32px);
+  }
+
+  .hp-hero {
+    padding: 40px 0 28px;
+  }
+
+  .hp-card {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 22px 18px;
+  }
+
+  .hp-card-art {
+    max-width: 130px;
+  }
+
+  .hp-steps {
+    align-items: flex-start;
+    text-align: left;
+    max-width: 220px;
+    margin-inline: auto;
+  }
+
+  .hp-card-body h3 {
+    text-align: center;
+  }
+
+  .hp-row-body {
+    padding-left: 18px;
+  }
+
+  .hp-support {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 24px 20px;
+  }
+
+  .hp-support p {
+    max-width: none;
+    margin-inline: auto;
+  }
+
+  .hp-support-btn {
+    justify-content: center;
+  }
+}
