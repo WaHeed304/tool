@@ -52,7 +52,10 @@
 
 .ab-hero-art {
   position: relative;
-  min-height: 380px;
+  min-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .ab-blob {
@@ -87,28 +90,18 @@
 }
 
 .ab-hero-main {
-  position: absolute;
-  right: 6%;
-  top: 8%;
-  width: min(280px, 58%);
-  aspect-ratio: 3 / 4;
-  object-fit: cover;
-  border-radius: 28px;
+  position: relative;
+  right: auto;
+  top: auto;
+  width: 100%;
+  max-width: 560px;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+  border-radius: 20px;
   z-index: 2;
+  display: block;
   box-shadow: 0 18px 40px rgba(26, 29, 35, 0.12);
-}
-
-.ab-hero-inset {
-  position: absolute;
-  left: 4%;
-  bottom: 10%;
-  width: min(150px, 34%);
-  aspect-ratio: 1;
-  object-fit: cover;
-  border-radius: 50%;
-  z-index: 3;
-  border: 6px solid #fff;
-  box-shadow: 0 12px 28px rgba(26, 29, 35, 0.14);
 }
 
 .ab-doodle {
@@ -163,17 +156,23 @@
 
 .ab-decade-art {
   position: relative;
-  min-height: 340px;
+  min-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .ab-decade-photo {
   position: relative;
   z-index: 2;
-  width: min(320px, 78%);
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
-  border-radius: 26px;
-  margin-left: 8%;
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+  border-radius: 20px;
+  margin-left: 0;
+  display: block;
   box-shadow: 0 16px 36px rgba(26, 29, 35, 0.1);
 }
 
@@ -598,30 +597,23 @@
 
 .ab-ranked-art {
   position: relative;
-  min-height: 300px;
+  min-height: 0;
   display: grid;
   place-items: center;
 }
 
 .ab-ranked-photo {
-  width: min(240px, 70%);
-  aspect-ratio: 1;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 8px solid #fff;
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+  border-radius: 20px;
+  border: 0;
   box-shadow: 0 16px 36px rgba(26, 29, 35, 0.12);
   position: relative;
   z-index: 2;
-}
-
-.ab-ranked-badge {
-  position: absolute;
-  right: 18%;
-  bottom: 12%;
-  width: 88px;
-  height: 88px;
-  z-index: 3;
-  filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.12));
+  display: block;
 }
 
 /* ——— CTA ——— */
@@ -641,18 +633,21 @@
 
 .ab-cta-art {
   position: relative;
-  min-height: 280px;
+  min-height: 0;
   display: grid;
   place-items: center;
 }
 
 .ab-cta-photo {
-  width: min(260px, 75%);
-  border-radius: 24px;
-  object-fit: cover;
-  aspect-ratio: 3 / 4;
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  border-radius: 20px;
+  object-fit: contain;
+  aspect-ratio: auto;
   position: relative;
   z-index: 2;
+  display: block;
   box-shadow: 0 16px 36px rgba(26, 29, 35, 0.1);
 }
 
@@ -785,21 +780,16 @@
   .ab-decade-art,
   .ab-ranked-art,
   .ab-cta-art {
-    min-height: 280px;
+    min-height: 0;
   }
 
-  .ab-hero-main {
-    position: relative;
-    right: auto;
-    top: auto;
-    width: 70%;
+  .ab-hero-main,
+  .ab-decade-photo,
+  .ab-ranked-photo,
+  .ab-cta-photo {
+    width: 100%;
+    max-width: 100%;
     margin: 0 auto;
-    display: block;
-  }
-
-  .ab-hero-inset {
-    left: 8%;
-    bottom: 4%;
   }
 }
 
